@@ -34,4 +34,4 @@ jobs:
 
       - name: Build container image
         run: |
-            docker buildx build --push --platform linux/amd64,linux/arm64 --tag ghcr.io/proalab/docker-valhalla/valhalla:${{ steps.extract_branch.outputs.branch }} .
+            docker buildx build --push --platform linux/amd64,linux/arm64 --tag ghcr.io/proalab/docker-valhalla-custom/valhalla:${{ steps.extract_branch.outputs.branch }} .
