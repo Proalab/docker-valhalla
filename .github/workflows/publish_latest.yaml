@@ -33,4 +33,4 @@ jobs:
 
       - name: Build and push images
         run: |
-            docker buildx build --push --platform linux/amd64,linux/arm64 --tag ghcr.io/proalab/docker-valhalla/valhalla:latest .
+            docker buildx build --push --platform linux/amd64,linux/arm64 --tag ghcr.io/proalab/docker-valhalla-custom/valhalla:latest .
